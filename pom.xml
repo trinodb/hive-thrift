@@ -26,6 +26,7 @@
 
     <properties>
         <air.check.skip-extended>true</air.check.skip-extended>
+        <air.javadoc.lint>all,-missing</air.javadoc.lint>
         <project.build.targetJdk>17</project.build.targetJdk>
     </properties>
 

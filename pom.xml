@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase</artifactId>
-        <version>133</version>
+        <version>146</version>
     </parent>
 
     <groupId>io.trino.hive</groupId>
@@ -32,15 +32,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
-            <version>0.17.0</version>
+            <version>0.19.0</version>
         </dependency>
 
         <dependency>
@@ -56,11 +50,6 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <configuration>
-                        <usedDependencies>
-                            <dependency>javax.annotation:javax.annotation-api</dependency>
-                        </usedDependencies>
-                    </configuration>
                 </plugin>
 
                 <plugin>

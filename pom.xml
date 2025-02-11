@@ -28,13 +28,14 @@
         <air.check.skip-extended>true</air.check.skip-extended>
         <air.javadoc.lint>all,-missing</air.javadoc.lint>
         <project.build.targetJdk>17</project.build.targetJdk>
+        <libthrift.version>0.21.0</libthrift.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
-            <version>0.19.0</version>
+            <version>${libthrift.version}</version>
         </dependency>
 
         <dependency>

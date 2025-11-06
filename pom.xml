@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase</artifactId>
-        <version>146</version>
+        <version>325</version>
     </parent>
 
     <groupId>io.trino.hive</groupId>
@@ -20,8 +20,8 @@
 
     <scm>
         <connection>scm:git:git://github.com/trinodb/hive-thrift.git</connection>
-        <url>https://github.com/trinodb/hive-thrift</url>
         <tag>HEAD</tag>
+        <url>https://github.com/trinodb/hive-thrift</url>
     </scm>
 
     <properties>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
-            <version>0.19.0</version>
+            <version>0.22.0</version>
         </dependency>
 
         <dependency>
@@ -66,13 +66,13 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.6.2</version>
                 <executions>
                     <execution>
-                        <phase>generate-sources</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
+                        <phase>generate-sources</phase>
                         <configuration>
                             <executable>${basedir}/bin/generate-sources.sh</executable>
                         </configuration>
@@ -83,13 +83,13 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.6.1</version>
                 <executions>
                     <execution>
-                        <phase>generate-sources</phase>
                         <goals>
                             <goal>add-source</goal>
                         </goals>
+                        <phase>generate-sources</phase>
                         <configuration>
                             <sources>
                                 <source>${project.build.directory}/generated-sources/thrift</source>

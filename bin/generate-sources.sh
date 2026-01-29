@@ -7,11 +7,10 @@ cd "${BASH_SOURCE%/*}/.."
 TARGET=/build/target/generated-sources/thrift
 
 # use the latest Thrift compiler
-docker run -v "${PWD}:/build" --rm debian /bin/sh -c "\
+docker run -v "${PWD}:/build" --rm debian:unstable /bin/sh -c "\
 set -eux
-echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
 apt-get update -q
-apt-get install -q -y thrift-compiler/experimental
+apt-get install -q -y thrift-compiler
 rm -rf $TARGET
 mkdir -p $TARGET
 thrift -o $TARGET \

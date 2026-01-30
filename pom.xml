@@ -10,7 +10,7 @@
 
     <groupId>io.trino.hive</groupId>
     <artifactId>hive-thrift</artifactId>
-    <version>3</version>
+    <version>4-SNAPSHOT</version>
 
     <name>hive-thrift</name>
     <description>Compiled Hive Thrift API</description>
@@ -20,7 +20,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/trinodb/hive-thrift.git</connection>
-        <tag>3</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/trinodb/hive-thrift</url>
     </scm>
 

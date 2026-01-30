@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.airlift</groupId>
         <artifactId>airbase</artifactId>
-        <version>325</version>
+        <version>346</version>
     </parent>
 
     <groupId>io.trino.hive</groupId>
@@ -27,7 +27,7 @@
     <properties>
         <air.check.skip-extended>true</air.check.skip-extended>
         <air.javadoc.lint>all,-missing</air.javadoc.lint>
-        <project.build.targetJdk>17</project.build.targetJdk>
+        <project.build.targetJdk>25</project.build.targetJdk>
     </properties>
 
     <dependencies>
@@ -66,7 +66,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.6.2</version>
+                <version>3.6.3</version>
                 <executions>
                     <execution>
                         <goals>
